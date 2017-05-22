@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckBox
+        android:id="@+id/cb_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模拟网络错误"/>
+    <CheckBox
+        android:id="@+id/cb_loaded_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模拟数据已经全部加载"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sr_load_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_load_more"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
